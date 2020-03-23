@@ -1,52 +1,66 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
-
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
-
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
-
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+1.  **First Download/Clone the website**
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+    Hey hey hey! So first, we need to install Git and this thing called npm. Go to your terminal on your MacBook and type in the following commands.
 
     ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
+    # if you don't have git it will prompt you to install it
+    git --version
+    ```
+    
+    You're going to want to download this too --> `https://nodejs.org/en/` (this will be important later!!)
+
+    Once you installed Git, we can download this website onto your computer! :)
+
+    For now, we'll put this project folder onto your Desktop!! Just follow the steps!
+    ```shell
+    # We are going to move the directory to your Desktop
+    cd Desktop
+    # this is going to create a copy of the project onto your desktop
+    git clone https://github.com/codyenokida/ashley-gatsby-portfolio.git
     ```
 
-1.  **Start developing.**
+    Now you should have this project folder downloaded onto your laptop hehe.
 
-    Navigate into your new site’s directory and start it up.
+2.  **Start by Opening the Project on your browser**
+
+    Navigate into the website directory and start it up.
 
     ```shell
-    cd my-default-starter/
+    # this command moves you into the folder that all my files are in
+    cd ashley-gatsby-portfolio/
+    # this command installs all of the extra goodies 
+    # that I used to make this website look the way it is
+    npm install
+    # lastly, this command starts up the website onto the server
     gatsby develop
     ```
 
-1.  **Open the source code and start editing!**
+3.  **Open the source code and start editing!**
 
     Your site is now running at `http://localhost:8000`!
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+    Any edits you make on the website will show up here first before the web!
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+    You must do some other commands to actually push the website onto the internet for EVERYONE to see.
 
 ## 🧐 What's inside?
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+A quick look at the top-level files and directories you'll see in this project
 
     .
     ├── node_modules
     ├── src
+      ├── components
+      ├── fonts
+      ├── images
+      ├── pages
+        ├── about.js
+        ├── animation.js
+        ├── design.js
+        ├── index.js 
+      ├── resume
     ├── .gitignore
     ├── .prettierrc
     ├── gatsby-browser.js
@@ -58,42 +72,33 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
     ├── package.json
     └── README.md
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+So pretty much, the only important, relavant files for you are in /src/. 
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+Inside src, we have files that are related to the pages on your website (I think this is pretty self-explanatory right :D)
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+If you want to add/change your designs, go to VSCode and open the entire project folder.
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+I left some instructions on the design.js and animation.js file for you to add designs!!
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+4.  **Final Steps**
+You're gonna want to push your changes back on to GitHub in order for it to show the changes on the internet. 
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
+Follow these commands and it will be done!
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+  ```shell
+    # adding changes made to everything in the src folder
+    git add src
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+    # adding all designs and animations that you added 
+    git add images
 
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
+    # commit the changes onto the repository
+    git commit -m "I added new designs and animations"
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
-
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-
-12. **`README.md`**: A text file containing useful reference information about your project.
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+    # Finally, push all the changes onto the web
+    git push origin master    
+  ```
 
 ## 💫 Deploy
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
-
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/gatsbyjs/gatsby-starter-default)
-
-<!-- AUTO-GENERATED-CONTENT:END -->

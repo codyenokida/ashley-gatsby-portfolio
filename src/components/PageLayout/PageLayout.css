@@ -9,6 +9,7 @@
     src:url("../../fonts/LuloClean.woff")format("woff");
 }
 
+/* Title for the page */
 .titleText {
     padding-top: 12vh;
     font-family: LuloCleanBold;

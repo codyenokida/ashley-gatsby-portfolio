@@ -10,6 +10,7 @@
     src:url("../fonts/LuloClean.woff")format("woff");
 }
 
+/* Container for all the things in the about page */
 .indexContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -21,25 +22,25 @@
     text-align: center;
 }
 
+/* Ashley Portrait */
 .image {
     width: 400px;
     padding-top: 30px;
 }
 
+/* Introduction text */
 .indexText {
     margin-left: 100px;
     font-family: LuloCleanBold;
 }
 
+/* Bold Title Text */
 .indexText h2 {
     letter-spacing: 5px;
     font-weight: 800;
 }
 
-.indexText span {
-    color: #FFDBA6;
-}
-
+/* Your introduction paragraph */
 .indexText p {
     font-family: 'Nunito Extra Light', sans-serif;
     font-weight: 100;
@@ -48,6 +49,7 @@
     font-size: 80%;
 }
 
+/* Styling for mobile */
 @media only screen and (max-width: 768px) {
     .indexContainer {
         grid-template-columns: 1fr;

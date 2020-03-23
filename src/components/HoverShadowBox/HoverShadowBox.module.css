@@ -1,15 +1,19 @@
+/* Shadow box animation transition */
 .hover_shadow_box {
   transition: 0.5s;
 }
 
+/* Box shadow when hovering */
 .hover_shadow_box:hover {
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
 }
 
+/* Raising animation */
 .hover_shadow_box_raise {
   transition: 0.5s;
 }
 
+/* Box Rising */
 .hover_shadow_box_raise:hover {
   margin-top: 5px;
   margin-bottom: 15px;

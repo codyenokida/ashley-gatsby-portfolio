@@ -10,8 +10,8 @@
     src:url("../../fonts/LuloClean.woff")format("woff");
 }
 
+/* Actual Navigation Bar*/
 .navbar {
-    /* text-align: center; */
     height: 10vh;
     position: fixed;
     width: 100%;
@@ -19,23 +19,27 @@
     font-family: LuloClean;
 }
 
+/* Text inside navigation bar */
 .navText {
     text-decoration: none;
     color: #303030;
 }
 
+/* Navigation bar content */
 .navContent {
     display: inline-block;
     float: right;
     padding: 2vh 2vw 2vh 0;
 }
 
+/* Ashley Yeh, back to home page */
 .navHeader {
     display: inline-block;
     padding: 2vh 0 2vh 3vw;
     font-size: 1.25rem;
 }
 
+/* List styling */
 .navbar ul {
     margin: 0;
     display: flex;

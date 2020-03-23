@@ -10,6 +10,7 @@
     src:url("../fonts/LuloClean.woff")format("woff");
 }
 
+/* Container for all the things in the home page */
 .indexContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -23,24 +24,29 @@
     text-align: center;
 }
 
+/* Ashley's Character */
 .image {
     width: 500px;
 }
 
+/* Introduction text */
 .indexText {
     margin-right: 10vw;
     font-family: LuloCleanBold;
 }
 
+/* Bold Title Text */
 .indexText h1 {
     letter-spacing: 10px;
     font-weight: 800;
 }
 
+/* Yellow text in Bold Title */
 .indexText span {
     color: #FFDBA6;
 }
 
+/* Introduction Paragraph */
 .indexText p {
     font-family: 'Nunito Extra Light', sans-serif;
     font-weight: 100;
@@ -48,6 +54,7 @@
     line-height: 1.5;
 }
 
+/* Styling for Mobile */
 @media only screen and (max-width: 768px) {
     .indexContainer {
         grid-template-columns: 1fr;

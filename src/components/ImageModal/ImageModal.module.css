@@ -1,3 +1,4 @@
+/* Container for Modal (Gray screen) */
 .modalContainer {
     display: flex;
     justify-content: center;
@@ -11,6 +12,7 @@
     z-index: 800;
 }
 
+/* Styling for Image when Modal is toggled */
 .image {
     width: 500px;
     opacity: 1;
