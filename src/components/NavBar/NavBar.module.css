@@ -17,6 +17,7 @@
     width: 100%;
     z-index: 1;
     font-family: LuloClean;
+    z-index: 700;
 }
 
 .navText {
