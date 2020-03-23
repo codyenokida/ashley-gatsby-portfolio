@@ -21,8 +21,6 @@ const Links = () => (
     </ul>
 )
 
-const NavTopMargin = () => <div style={{ height: 80 }} />
-
 class MinimalBar extends React.Component {
   handleAYButtonClick() {
     navigate("/")
@@ -37,6 +35,7 @@ class MinimalBar extends React.Component {
         >
           AY
         </button>
+        
         <button className={styles.menuButton} onClick={this.props.onClick}>
           <FontAwesomeIcon icon={faBars} />
         </button>
@@ -91,17 +90,10 @@ class Navbar extends React.Component {
     super(props)
     this.state = {
       toggled: false,
-      type: this.props.type,
     }
 
     this.handleMenuClick = this.handleMenuClick.bind(this)
     this.handleCloseButtonClick = this.handleCloseButtonClick.bind(this)
-  }
-
-  componentWillReceiveProps(nextProps) {
-    if (nextProps.type !== this.state.type) {
-      this.setState({ type: nextProps.type })
-    }
   }
 
   handleMenuClick() {
@@ -117,9 +109,8 @@ class Navbar extends React.Component {
   }
 
   render() {
-
     return (
-      <div style={{display: 'block'}}>
+      <div>
         <FullBar
           className={[
             styles.navbar,
@@ -135,6 +126,7 @@ class Navbar extends React.Component {
             this.props.className,
           ].join(" ")}
           onClick={this.handleMenuClick}
+          show={this.state.toggled}
         />
 
         <NavMobileMenu
@@ -143,7 +135,6 @@ class Navbar extends React.Component {
           onClick={this.handleCloseButtonClick}
         />
 
-        {this.props.type === "solid" ? <NavTopMargin /> : null}
       </div>
     )
   }

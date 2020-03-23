@@ -17,7 +17,6 @@
     width: 100%;
     z-index: 1;
     font-family: LuloClean;
-    z-index: 700;
 }
 
 .navText {
@@ -96,8 +95,9 @@
 }
 
 .navbarMobileMenu li {
-    margin: 20px;
+    margin: 50px;
     display: block;
+    font-family: LuloCleanBold;
 }
 
 .navbarMobileMenu a {
@@ -119,7 +119,6 @@
         display: none;
     }
 }
-
 
 /* AY back to home */
 .AYButton {
@@ -147,7 +146,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    height: 100px;
+    height: 80px;
     background: none;
     outline: none;
     border: none;

@@ -3,7 +3,7 @@ import { Box, Image, Flex } from "rebass"
 import { Fade } from "react-reveal"
 
 import styles from "./BannerImageRow.module.css"
-import ImageModal from '../ImageModal/ImageModal'
+import BannerModal from '../BannerModal/BannerModal'
 import HoverShadowBox from '../HoverShadowBox/HoverShadowBox'
 
 class BannerImageRow extends React.Component {
@@ -36,7 +36,7 @@ class BannerImageRow extends React.Component {
                         <Image src={this.props.bannerImage} className={styles.image} onClick={this.handleClick.bind(this, this.props.bannerImage)}/>
                     </HoverShadowBox>
                 </Fade>
-                {this.state.modalState ? <ImageModal action={this.handleClick} source={this.state.modalImage}/> : null}
+                {this.state.modalState ? <BannerModal action={this.handleClick} source={this.state.modalImage}/> : null}
             </Flex>
         )
     }

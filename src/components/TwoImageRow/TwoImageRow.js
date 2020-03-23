@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Image, Flex } from "rebass"
+import { Image, Flex } from "rebass"
 import { Fade } from "react-reveal"
 
 import styles from "./TwoImageRow.module.css"
