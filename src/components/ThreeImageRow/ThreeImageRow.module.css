@@ -1,4 +1,5 @@
 .image {
     width: 400px;
-    padding: 20px 40px 20px 40px
+    padding: 20px 40px 20px 40px;
+    z-index: 30;
 }

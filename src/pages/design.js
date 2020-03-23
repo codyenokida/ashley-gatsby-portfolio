@@ -4,10 +4,10 @@ import PageLayout from "../components/PageLayout/PageLayout"
 import SEO from "../components/seo"
 import TwoImageRow from "../components/TwoImageRow/TwoImageRow"
 import ThreeImageRow from "../components/ThreeImageRow/ThreeImageRow"
+import BannerImageRow from "../components/BannerImageRow/BannerImageRow"
 
 import HrmaOne from '../images/designs/hrma 6.png'
 import Cover from "../images/designs/cover photo-01.png"
-import BannerImageRow from "../components/BannerImageRow/BannerImageRow"
 
 const DesignPage = () => (
   <PageLayout title="designs">

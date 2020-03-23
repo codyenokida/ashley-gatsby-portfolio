@@ -27,9 +27,7 @@ class ImageModal extends React.Component {
     render() {
         return (
         <div className={styles.modalContainer} onClick={this.props.action}>
-            <Image className={styles.image} src={withPrefix(
-              this.props.source
-            )}/>
+            <Image className={styles.image} src={withPrefix(this.props.source)}/>
         </div>
         )
     }

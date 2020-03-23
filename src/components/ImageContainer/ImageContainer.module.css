@@ -1,5 +1,5 @@
 .image {
     width: 400px;
     padding: 20px 50px 20px 50px;
-    position: relative;
+    z-index: 900;
 }

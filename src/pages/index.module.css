@@ -25,13 +25,11 @@
 
 .image {
     width: 500px;
-    grid-column: 1 / 2;
 }
 
 .indexText {
     margin-right: 10vw;
     font-family: LuloCleanBold;
-    grid-column: 2 / 3;
 }
 
 .indexText h1 {
