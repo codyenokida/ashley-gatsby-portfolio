@@ -1,0 +1,156 @@
+/* LuloCleanBold */
+@font-face { 
+    font-family: "LuloCleanBold";
+    src:url("../../fonts/LuloCleanBold.woff")format("woff");
+}
+
+/* Regular LuloClean */
+@font-face {
+    font-family:"LuloClean";
+    src:url("../../fonts/LuloClean.woff")format("woff");
+}
+
+.navbar {
+    /* text-align: center; */
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    font-family: LuloClean;
+}
+
+.navText {
+    text-decoration: none;
+    color: #303030;
+}
+
+.navContent {
+    display: inline-block;
+    float: right;
+    padding: 2vh 2vw 2vh 0;
+}
+
+.navHeader {
+    display: inline-block;
+    padding: 2vh 0 2vh 3vw;
+    font-size: 1.25rem;
+}
+
+.navbar ul {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.navbar li {
+    margin: 10px 20px 10px 20px;
+    display: inline-block;
+}
+
+.navbar li a:hover {
+    color: #FFDBA6;
+    transition-duration: 0.5s;
+}
+
+.navbarDesktop {
+    display: none;
+}
+
+.navbarMobile {
+    display: block;
+}
+
+.navbarMobileMenu {
+    text-align: center;
+    margin-bottom: 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: table;
+    background-color: #FFDBA6;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 100ms linear;
+    font-family: LuloClean;
+}
+
+.navbarMobileMenu.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 100ms linear, visibility 100ms linear;
+}
+
+.navbarMobileMenu ul {
+    align-items: center;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.navbarMobileMenu li {
+    margin: 20px;
+    display: block;
+}
+
+.navbarMobileMenu a {
+    text-transform: uppercase;
+    color: #303030;
+    text-decoration: none;
+}
+
+@media (min-width: 800px) {
+    .navbarDesktop {
+        display: block;
+    }
+
+    .navbarMobile {
+        display: none;
+    }
+
+    .navbarMobileMenu {
+        display: none;
+    }
+}
+
+
+/* AY back to home */
+.AYButton {
+    float: left;
+}
+
+/* Menu Hamburger */
+.menuButton {
+    float: right;
+}
+
+/* Styling for Mobile Navigations */
+.AYButton,
+.menuButton {
+    height: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+}
+
+/* Menu Hamburger Closed */
+.closeButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100px;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    color: #303030;
+}

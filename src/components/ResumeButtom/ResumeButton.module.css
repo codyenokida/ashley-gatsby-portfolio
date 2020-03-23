@@ -1,0 +1,25 @@
+/* Button for Resume */
+.resumeButton {
+    font-family: LuloClean;
+    background-color: #FFDBA6; /* Green */
+    border-radius: 40px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+/* On Hover: Button for Resume */
+.resumeButton:hover {
+    opacity: 0.75;
+}
+
+.resumeButton a {
+    text-decoration: none;
+    color: white;
+}
