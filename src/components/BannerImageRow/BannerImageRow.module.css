@@ -3,3 +3,7 @@
     width: 800px;
     padding: 20px 50px 20px 50px
 }
+
+.image:hover {
+    cursor: zoom-in;
+}
