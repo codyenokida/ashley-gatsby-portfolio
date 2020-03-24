@@ -35,9 +35,11 @@ import CCCFlyer03 from '../images/designs/CCC-Open-House-Punch-Cards.png'
 // *Note2* the tags you add will be ordered from top to bottom when you view it on the website
 // <TwoImageRow imageOne={apeelSciencesPost02} TwoImageRow={ashleyCharacter}/>
 
+const description = "Ashley Yeh | I'm currently an undergraduate student studying at the University of California, Irvine majoring in Business Administration with an emphasis in Marketing and a minor in Digital Information Systems. I am passionate designer and is always looking for opportunities to improve!"
+
 const DesignPage = () => (
   <PageLayout title="designs">
-    <SEO title="Designs" />
+    <SEO title="Designs" description={description}/>
 
     <BannerImageRow bannerImage={apeelSciencesPost03}/>
     <TwoImageRow imageOne={apeelSciencesPost02} imageTwo={ashleyCharacter}/>

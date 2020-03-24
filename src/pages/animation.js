@@ -25,9 +25,12 @@ import smokeMountain from '../images/animations/smoke-mountains.gif'
 // *Note* add the thing you added in STEP 1 to insert to imageOne (that's gonna be the first image) 
 // <TwoImageRow imageOne={apeelSciencesPost02} TwoImageRow={ashleyCharacter}/>
 
+const description = "Ashley Yeh | I'm currently an undergraduate student studying at the University of California, Irvine majoring in Business Administration with an emphasis in Marketing and a minor in Digital Information Systems. I am passionate designer and is always looking for opportunities to improve!"
+
+
 const AnimationPage = () => (
   <PageLayout title="animations">
-    <SEO title="Animations" />
+    <SEO title="Animations" description={description}/>
     <TwoImageRow imageOne={apeelSciencesPost01} imageTwo={playAnimation}/>
     <TwoImageRow imageOne={ploppingFish} imageTwo={smokeMountain}/>
   </PageLayout>

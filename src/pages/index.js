@@ -7,9 +7,11 @@ import { Image } from "rebass"
 
 import styles from "./index.module.css"
 
+const description = "Ashley Yeh | I'm currently an undergraduate student studying at the University of California, Irvine majoring in Business Administration with an emphasis in Marketing and a minor in Digital Information Systems. I am passionate designer and is always looking for opportunities to improve!"
+
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Home" description={description}/>
     <div className={styles.indexContainer}>
 
       <Image src={AshleyCharacter} className={styles.image}/>
