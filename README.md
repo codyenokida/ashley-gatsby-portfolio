@@ -1,4 +1,4 @@
-## 🚀 Quick start
+## How to Start (For Ashley)
 
 1.  **First Download/Clone the website**
 
@@ -98,7 +98,3 @@ Follow these commands and it will be done!
     # Finally, push all the changes onto the web
     git push origin master    
   ```
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
